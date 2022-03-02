@@ -1,2 +1,0 @@
-# emshey.ca
-family webpage
