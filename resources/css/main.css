@@ -1,21 +1,27 @@
+@font-face {
+    font-family: coffecake;
+    src: url(/resources/fonts/coffecake/CoffeCake.otf);
+}
+
 * {
     box-sizing: border-box;
+    font-family: coffecake;
+    letter-spacing: 2px;
     margin: 0;
     padding: 0;
 }
-a {
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #fff;
-}
+
+
 
 body {
     font-family: sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    background: #a1c3ff;
+    background-color: #30737b;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 img {
@@ -32,9 +38,8 @@ ul {
 }
 
 .container {
-    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 30px;
+    
 }
 
 .navbar {
@@ -75,30 +80,59 @@ ul {
 }
 
 .header {
-    background-color: #0151cc;
+    display: flex;
     color: #fff;
-    min-height: 400px;
+    flex: 0 1 auto;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
 }
 
 .header h1 {
-    font-size: 3rem;
+    font-size: 8rem;
     font-weight: bold;
     line-height: 1.2;
+
 }
 
-.header img {
-    max-width: 400px;
-}
 
-.header .container {
+.body {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 1 auto;
+    background-color: #28666e;
     align-items: center;
     justify-content: space-between;
 }
 
-.boxes .container {
+.email{
+    color: #fff;
+    text-decoration: none;
+    font-size: 36px;
+
+}
+
+.wave {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: url(/resources/images/wave.png);
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+}
+
+#mat, #maddie {
+    padding-top: 160px;
 }
 
 .box {
@@ -110,6 +144,30 @@ ul {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
     padding: 15px 20px;
 }
+
+.circle {
+    border-radius: 50%;
+    height: 500px;
+}
+
+.circle.blue { 
+
+    border: 20px solid #033f63;
+
+}
+
+.circle.green { 
+
+    border: 20px solid #b5b682;
+    
+}
+
+.circle.yellow { 
+
+    border: 20px solid #fedc97;
+    
+}
+
 
 @media (max-width: 768px) {
     .header .container {
